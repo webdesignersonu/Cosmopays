@@ -1,0 +1,49 @@
+<div class="position-relative">
+   <div><img src="assets/images/ellipse1.png" class="position-absolute img-fluid position-top position-right"></div>
+   <div><img src="assets/images/ellipse2.png" class="position-absolute img-fluid position-bottom position-left"></div>
+   <div class="d-flex justify-content-center align-items-center min-h-screen">
+      <div class="position-relative pb-10 px-3 z-2 max-w">
+         <div class="box shadow p-6">
+            <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <form class="form-bg-color border">
+                     <div class="login-heading-text">
+                        <h3 class="h3 mb-2">Hello ! & Welcome to KYC Verification Process!</h3>
+                        <p class="bb-dashed mb-3 pb-3">Easiest 4 STEPS for Account Opening Process</p>
+                     </div>
+                     <div class="ab-stepper pt-3">
+                        <ul id="progressbar">
+                           <li class="passport">
+                              <fieldset>
+                                 <button class="disbaledClass" [routerLink]="['/onboarding-kyc/passport']"
+                                    routerLinkActive="router-link-active">
+                                    <span class="text-primary fw-bold">Passport Verification</span>
+                                 </button>
+                              </fieldset>
+                           </li>
+                           <li class="bankd">
+                              <fieldset><button class="disbaledClass" [routerLink]="['/onboarding-kyc/bank-detail']"
+                                    routerLinkActive="router-link-active"><span>Bank Details</span></button></fieldset>
+                           </li>
+                           <li class="utility">
+                              <fieldset><button class="disbaledClass" [routerLink]="['/onboarding-kyc/utility']"
+                                    routerLinkActive="router-link-active"><span>Utility Bill </span></button></fieldset>
+                           </li>
+                           <li class="esign">
+                              <fieldset><button class="disbaledClass" [routerLink]="['/onboarding-kyc/esign']"
+                                    routerLinkActive="router-link-active"><span>E-Signature</span></button></fieldset>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="pt-0"><router-outlet></router-outlet></div>
+                  </form>
+               </div>
+               <!-- <div
+                  class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                  <img src="assets/images/passport-upload.png" class="img-fluid">
+               </div> -->
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

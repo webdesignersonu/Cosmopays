@@ -1,1 +1,333 @@
+/* Importing PT Sans link file. */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* You can add global styles to this file, and also import other style files */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+    background-color: #20b75733;
+    transition-duration: .3s;
+    width: 5px;
+    height: 5px;
+    border-radius: 12px
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #20b757;
+    border-radius: 12px;
+    transition-duration: .3s
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #20b757
+}
+
+  
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #222e48 !important;
+  
+}
+body {
+    --bs-body-bg: #eff2fd;
+    scroll-behavior: smooth !important;
+    --bs-body-font-family: "PT Sans", sans-serif;
+    scroll-behavior: smooth;
+    color: #222e48;
+}
+//  Start header
+body.vertical .topbarmargin {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+}
+body.vertical .navbar-top {
+    padding-right: 1.5rem;
+}
+body.vertical .navbar-top {
+    position: fixed;
+}
+//  End header
+body.vertical .main-content.has-sidebar {
+    margin-left: 280px;
+}
+// body.vertical .main-content {
+//     padding-top: 98px;
+// }
+body.vertical .main-content {
+    transition-duration: .3s;
+}
+
+body.vertical .has-sidebar.footer {
+    margin-left: 280px;
+}
+
+
+//  Start sidebar
+
+body.vertical .sidebar {
+    left: 0;
+}
+body.vertical .sidebar {
+    position: fixed;
+    top: 0;
+    z-index: 21;
+    height: 100%;
+    width: 280px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    transition-duration: .3s;
+}
+.sidebarshow {
+    visibility: visible;
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+body.vertical .sidebar .logo-container {
+    padding: 1.5rem;
+}
+body.vertical .sidebar .menu-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow-y: auto;
+    width: 280px;
+}
+body.vertical .sidebar .menu-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+body.vertical .sidebar .menu-heading {
+    border-top-width: 2px;
+    border-style: dashed;
+    border-color: #20b75733;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: .875rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+body.vertical .sidebar .menu-ul {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+body.vertical .sidebar .menu-li {
+    border-radius: 1rem;
+    background-color: #20b7570d;
+}
+body.vertical .sidebar .menu-btn {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+body.vertical .sidebar .menu-btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .75rem;
+    padding: .625rem 1rem;
+    transition-duration: .3s;
+}
+.active {
+    background-color: #20b757 !important;
+    color: #fff !important;
+}
+body.vertical .sidebar .submenu {
+    overflow: hidden;
+    padding: .75rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .3s;
+}
+body.vertical .submenu-show {
+    visibility: visible;
+    height: auto;
+    max-height: 800px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+body.vertical .submenu-hide {
+    visibility: hidden;
+    max-height: 0px;
+    padding: 0 12px !important;
+}
+body.vertical .submenu-link{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition-duration: .3s;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+body.vertical .submenu-link:hover{
+    color: rgb(32 183 87);
+}
+.router-link-exact-active {
+    color: rgb(32 183 87);
+} 
+body.vertical .sidebar .menu-btn:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(32 183 87);
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255);
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.position-top {
+    top: 1.25rem;
+}
+
+.position-right {
+    right: 2.5rem;
+}
+
+.position-bottom {
+    bottom: 1.5rem;
+}
+
+.position-left {
+    left: 8rem
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

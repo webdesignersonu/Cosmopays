@@ -1,0 +1,44 @@
+.pb-28 {
+    padding-bottom: 7rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.text-16 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 32px;
+    border-width: 1px;
+    border-color: rgb(32 183 87);
+    background-color: rgb(32 183 87);
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: rgb(255 255 255);
+    transition-duration: .3s
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    --tw-text-opacity: 1;
+    color: rgb(32 183 87 / var(--tw-text-opacity))
+  }
+  
+  .btn {
+    padding: .625rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .btn i {
+    font-size: 20px;
+  }
