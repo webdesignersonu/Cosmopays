@@ -9,6 +9,9 @@ const routes: Routes = [
   { path: 'reset-password', loadChildren: () => import('./modules/reset-password/reset-password.module').then(m => m.ResetPasswordModule) },
   { path: 'success-message', loadChildren: () => import('./modules/success-message/success-message.module').then(m => m.SuccessMessageModule) },
   { path: 'onboarding-kyc', loadChildren: () => import('./modules/onboarding-kyc/onboarding-kyc.module').then(m => m.OnboardingKycModule) },
+  { path: 'user-profile', loadChildren: () => import('./modules/user-profile/user-profile.module').then(m => m.UserProfileModule) },
+  { path: 'banking-accounts', loadChildren: () => import('./modules/banking-accounts/banking-accounts.module').then(m => m.BankingAccountsModule) },
+  
 ];
 
 @NgModule({

@@ -1,0 +1,387 @@
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.bor {
+    border: 1px dashed rgb(32, 183, 87);
+}
+
+.bg {
+    background-color: #20b7570d;
+}
+
+.main-inner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+.width-45 {
+    min-width: 300px;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.gap-x-6 {
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+.gap-y-6 {
+    row-gap: 1.5rem;
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid {
+    display: grid;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: .75rem;
+    --tw-shadow: 0px 6px 40px 0px rgba(0, 0, 0, .02);
+    --tw-shadow-colored: 0px 6px 40px 0px var(--tw-shadow-color);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.rounded-lg {
+    border-radius: .5rem;
+}
+
+.accounts h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.accounts i {
+    color: rgb(32, 183, 87);
+    font-size: 1rem;
+}
+
+.accounts .points {
+    font-size: .875rem;
+    line-height: 1rem;
+    color: #404a60;
+}
+
+.accounts .small-text {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #20b757;
+}
+
+.accounts .text-text {
+    font-size: 0.938rem;
+    line-height: 1rem;
+    color: #404a60;
+}
+
+.grid-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.top-text {
+    top: 8px;
+    left: 65px;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 32px;
+    border-width: 1px;
+    border-color: rgb(32, 183, 87);
+    background-color: rgb(32, 183, 87);
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: rgb(255 255 255);
+    transition-duration: .3s
+}
+
+.btn:hover {
+    background-color: transparent;
+    --tw-text-opacity: 1;
+    color: rgb(32 183 87 / var(--tw-text-opacity))
+}
+
+.btn {
+    padding: .625rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.btn i {
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.btn:hover i {
+    font-size: 20px;
+    color: rgb(32 183 87 / var(--tw-text-opacity))
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.text-sm {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #404a60;
+}
+
+.text-sm-1 {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.height-7 {
+    height: 465px;
+}
+
+.flag-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+}
+
+.labelsmall {
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.border-b {
+    border-bottom: 1px dashed rgb(32, 183, 87);
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-green {
+    background-color: rgb(32, 183, 87);
+}
+
+.icon-size i {
+    color: rgb(32, 183, 87);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.overflow h2 {
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+.overflow .icon-size-error i {
+    color: rgb(255, 199, 0);
+    font-size: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// New Css
+.rounded-xl {
+    border-radius: .75rem;
+}
+.boxcard{
+    position: relative;
+    background-color: rgb(32, 183, 87);
+    border-radius: .75rem;
+    overflow: hidden;
+}
+.boxcard:after {
+    position: absolute;
+    background-color: rgb(255 200 97);
+    width: 300px;
+    height: 300px;
+    top: 40%;
+    left: 65%;
+    border-radius: 9999px;
+    content: "";
+}
+.boxcard .h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+.boxcard .text-xs {
+    font-size: .875rem;
+    line-height: 1rem;
+}
+.boxcard .text-white-color{
+    color: #fff;
+}
+.boxcard .z-1{
+    z-index: 1;
+}
+.boxcard p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.small-text {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #20b757;
+}
+.text-text {
+    font-size: 0.938rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+hr{
+    border-top:1px dashed rgb(32, 183, 87);
+}
+.btn-outline {
+    background-color: transparent;
+    color: rgb(32, 183, 87)
+}
+
+.btn-outline:hover {
+    background-color: rgb(32, 183, 87);
+    color: rgb(255 255 255)
+}
+.active-card{
+    background-color: #20b7570d;
+    border:1px dashed rgb(32, 183, 87);
+}
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+.more{
+    color: rgb(32, 183, 87);
+}
+.more i{
+    font-size: 22px; 
+    color: rgb(32, 183, 87);
+}
+.px-6 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.py-6 {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+}
+table thead tr th {
+    background-color: #4371e90d;
+}
+table thead tr th:first-child {
+   border-top-left-radius: 0.75rem;
+  
+}
+table thead tr th:last-child{
+    border-top-right-radius: 0.75rem;
+}
+table tbody tr td{
+    vertical-align: middle;
+}
+tr:nth-child(even) {background-color: #4371e90d;}
+.badge{
+        text-transform: capitalize;
+        font-size: .875rem;
+        line-height: 1rem;
+        padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 30px;
+    font-weight: 400;
+    width: 5rem;
+}
+.badge.reject {
+    background-color: rgb(255, 97, 97, 0.15);
+    border:1px solid rgb(255 97 97);
+    color: rgb(255, 97, 97);
+}
+.badge.pending{
+    background-color: rgba(255, 159, 67, .15) !important;
+    color: #ff9f43;
+    border:1px solid rgb(255, 159, 67);
+}
+.badge.active{
+    background-color: rgba(34, 183, 131, .15) !important;
+    color: #22b783 !important;
+    border:1px solid rgb(34, 183, 131);
+}
+.icon-dots{
+    font-size: 22px;
+}
+.page-icon{
+width: 2.5rem;
+height: 2.5rem;
+border:1px solid rgb(32,183,87);
+background-color: #fff;
+color:rgb(32,183,87);
+font-size: 1rem;
+line-height: 1rem;
+font-weight: 600;
+}
+.page-icon:hover{
+    background-color: rgb(32,183,87);
+    color: #fff;
+}
+.duration-300 {
+    transition-duration: .3s;
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+.bg{
+    background-color: rgb(32,183,87);
+    color: #fff;
+}
+.page-icon .icon{
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+.page-text{
+    font-size: 1rem;
+    line-height: 1rem;  
+}
+.dots-icon{
+    font-size: 22px;
+}

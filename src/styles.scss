@@ -188,7 +188,9 @@ body.vertical .main-content {
 body.vertical .has-sidebar.footer {
     margin-left: 280px;
 }
-
+body.vertical .main-content {
+    padding-top: 98px;
+}
 
 //  Start sidebar
 
@@ -297,14 +299,14 @@ body.vertical .submenu-link{
     line-height: 1.5rem;
 }
 body.vertical .submenu-link:hover{
-    color: rgb(32 183 87);
+    color: rgb(32, 183, 87);
 }
 .router-link-exact-active {
-    color: rgb(32 183 87);
+    color: rgb(32, 183, 87);
 } 
 body.vertical .sidebar .menu-btn:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(32 183 87);
+    background-color: rgb(32, 183, 87);
     --tw-text-opacity: 1;
     color: rgb(255 255 255);
 }
@@ -328,6 +330,66 @@ body.vertical .sidebar .menu-btn:hover {
 .position-left {
     left: 8rem
 }
+.my-modal1 {
+    .modal-content {
 
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.07);
+        background: linear-gradient(117.76deg, rgba(255, 255, 255, 0.7) -7.21%, rgba(255, 255, 255, 0.5) 118.08%);
+        border: 1px solid #ffffff;
+    }
+
+    .modal-header {
+        border-bottom: none;
+        // text-align: center;
+        display: contents;
+    }
+
+    .modal-body {
+        background: #fff;
+        border-radius: 8px;
+        // border: solid 1px #b9b9b9;
+    }
+
+    .modal-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .myclose1 {
+        background: rgb(32, 183, 87);
+        margin-top: -3px;
+        position: absolute;
+        right: -24px;
+        top: -20px;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+
+        &:hover {
+            background: rgb(32, 183, 87) ;
+            color: #fff
+        }
+    }
+
+    .title {
+        color: #009688
+    }
+}
+.modal .btn-close-my {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(32, 183, 87) !important;
+    border-radius: 0.5rem;
+    border: none;
+    border-radius: 100%;
+}
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

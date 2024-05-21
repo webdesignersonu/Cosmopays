@@ -1,0 +1,384 @@
+<div class="main-inner">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-8">
+        <div>
+            <h2 class="mb-0">Profile Details / <span class="text-color">Pushkar Singh</span></h2>
+            <div class=" d-flex align-items-center justify-content-start">
+                <div class="me-3">Refer Code : <span class="text-color ">sg@5aanc </span> </div>
+                <div>Submited At : <span class="text-color">2024-02-03 07:19:14</span></div>
+            </div>
+        </div>
+
+        <button class="btn px-5 mt-2 me-3"><i class='bx bx-arrow-back'></i>Back</button>
+    </div>
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="box p-3 min-height">
+                <div class="box-inner p-3">
+                    <div class="box-inner-heading-text">
+                        <h3 class="h3 mb-1">Application Info!</h3>
+                        <p class="bb-dashed mb-3 pb-3">Submission date, approve date, status etc.</p>
+                    </div>
+                    <div class="card-inner">
+                        <div class=" text-center">
+                            <div class="user-avatar lg w-25 mx-auto"><img src="assets/images/user-big-4.png" width="80" height="80"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="user-info text-center mt-4 mb-3">
+                                <div class="reject mb-3 d-flex align-items-center justify-content-center w-25 mx-auto">Active</div>
+                                <h5 class="fw-bold mb-0">Pushkar Singh </h5>
+                                <span class="sub-text">pushkar.singh@marketwicks.com</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul class="mb-0 profile-sidebar d-flex align-items-center justify-content-center ps-0">
+                            <li class="text-color"><span><i class="bx bx-check-shield icon"></i></span>
+                            </li>
+                            <li><span><i class="bx bx-envelope icon"></i></span></li>
+                            <li><span><i class="bx bx-bookmarks icon"></i></span></li>
+                            <li class="text-danger"><span><i class="bx bx-x-circle icon"></i></span></li>
+                        </ul>
+                        <hr class="mt-2">
+                        <div class="overline-title mb-2"> SHORT DETAILS</div>
+                        <div class="mt-3">
+                            <span class="sub-text">User ID:</span>
+                            <span>corpotest@gmail.com</span>
+                        </div>
+                        <div class="mt-3">
+                            <span class="sub-text">Last Login:</span>
+                            <span>2024-02-03 07:19:14</span>
+                        </div>
+                        <div class="mt-3">
+                            <span class="sub-text">KYC Status:</span>
+                            <span class="pending w-25 text-center mt-2">Pending</span>
+                        </div>
+                        <div class="mt-3">
+                            <span class="sub-text">Register At:</span>
+                            <span>2024-02-03 07:19:14</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="box p-3">
+                <div class="box-inner p-3">
+                    <div class="box-inner-heading-text">
+                        <h3 class="h3 mb-1">Customer Details!</h3>
+                        <p class="bb-dashed mb-3 pb-3">Submission date, approve date, status etc.</p>
+                    </div>
+                    <ul class="d-flex align-items-center justify-content-start ps-0">
+                        <li [ngClass]="{'active': libuysellTab == 'passport'}" (click)="libuysell ('passport')">
+                            <div class="tabnavc-a ">
+                                <div><span class="tabnavc-txt">Passport</span></div>
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': libuysellTab == 'utility-bills'}"
+                            (click)="libuysell ('utility-bills')">
+                            <div class="tabnavc-a">
+                                <div><span class="tabnavc-txt">Utility Bills</span></div>
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': libuysellTab == 'personal-info'}"
+                            (click)="libuysell ('personal-info')">
+                            <div class="tabnavc-a">
+                                <div><span class="tabnavc-txt">Personal Info</span></div>
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': libuysellTab == 'bank-info'}" (click)="libuysell ('bank-info')">
+                            <div class="tabnavc-a">
+                                <div><span class="tabnavc-txt">Bank Info</span></div>
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': libuysellTab == 'e-sign'}" (click)="libuysell ('e-sign')">
+                            <div class="tabnavc-a">
+                                <div><span class="tabnavc-txt">E-Sign</span></div>
+                            </div>
+                        </li>
+                        <li [ngClass]="{'active': libuysellTab == 'change-password'}"
+                            (click)="libuysell ('change-password')">
+                            <div class="tabnavc-a">
+                                <div><span class="tabnavc-txt">Change Password</span></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div *ngIf="libuysellTab == 'passport'">
+                        <div class="box p-3 height">
+                            <div class="box-inner-heading-text">
+                                <h3 class="h3 mb-1">Passport Info!</h3>
+                                <p class="bb-dashed mb-3 pb-3">Please cross-check to confirm if the details are correct
+                                    or not.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-3">
+                                    <div class="file-uploader p-2">
+                                        <div class="content" (click)="openLg(zoomimage)">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image" src="assets/images/front-passport.jpg" alt="">
+                                            <div class="content-details fadeIn-top fadeIn-left">
+                                                <i class='bx bx-zoom-in icon'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="box-inner-heading-text">
+                                            <h3 class="h3 mb-0 mt-3 font-16 text-color">Front Side of Passport</h3>
+                                            <p class="bb-dashed mb-3 pb-3">We take data seriously and your info is safe
+                                                with us</p>
+                                        </div>
+                                        <button class="btn px-5 mt-2"><i class='bx bx-download'></i>Download</button>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-3">
+                                    <div class="file-uploader p-2 ">
+                                        <div class="content" (click)="openLg(zoomimage)">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image" src="assets/images/back-passport.jpg" alt="">
+                                            <div class="content-details fadeIn-top fadeIn-left">
+                                                <i class='bx bx-zoom-in icon'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="box-inner-heading-text">
+                                            <h3 class="h3 mb-0 mt-3 font-16 text-color">Back Side of Passport</h3>
+                                            <p class="bb-dashed mb-3 pb-3">We take data seriously and your info is safe
+                                                with us</p>
+                                        </div>
+                                        <button class="btn px-5 mt-2"><i class='bx bx-download'></i>Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="libuysellTab == 'utility-bills'">
+                        <div class="box p-3 height">
+                            <div class="box-inner-heading-text">
+                                <h3 class="h3 mb-1">Utility Bills!</h3>
+                                <p class="bb-dashed mb-3 pb-3">Please cross-check to confirm if the details are correct
+                                    or not.</p>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-3">
+                                    <div class="file-uploader p-2">
+                                        <div class="content" (click)="openLg(zoomimage)">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image img-fluid" src="assets/images/utility-bills.jpg"
+                                                alt="">
+                                            <div class="content-details fadeIn-top fadeIn-left">
+                                                <i class='bx bx-zoom-in icon'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="box-inner-heading-text">
+                                            <h3 class="h3 mb-0 mt-3 font-16 text-color">Utility Bills</h3>
+                                            <p class="bb-dashed mb-3 pb-3">We take data seriously and your info is safe
+                                                with us</p>
+                                        </div>
+                                        <button class="btn px-5 mt-2"><i class='bx bx-download'></i>Download</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="libuysellTab == 'personal-info'">
+                        <div class="box p-3 height">
+                            <div class="box-inner-heading-text">
+                                <h3 class="h3 mb-1">Personal Info!</h3>
+                                <p class="bb-dashed mb-3 pb-3">Basic info like name, phone, address, country etc.</p>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Name <span class="text-danger">*</span></label><input
+                                            type="text" value="Jhon Deo" readonly id="name"
+                                            class="text-sm py-3 px-6 w-100 mb-2"></div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Email Id <span class="text-danger">*</span></label><input
+                                            type="text" value="john.deo@gmail.com" readonly id="name"
+                                            class="text-sm py-3 px-6 w-100 mb-2"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Phone Number <span
+                                                class="text-danger">*</span></label><input type="text"
+                                            value="+91 9898989898" readonly id="name"
+                                            class="text-sm py-3 px-6 w-100 mb-2"></div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Date of Birth <span
+                                                class="text-danger">*</span></label><input type="text"
+                                            value="18/12/1988" readonly id="name" class="text-sm py-3 px-6 w-100 mb-2">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <label for="email" class="mb-3 mt-3">Full Address <span
+                                                class="text-danger">*</span></label>
+                                        <textarea rows="1" class="text-sm py-3 px-6 w-100 mb-2"
+                                            style="resize: none;">Akshya Nagar 1st Block 1st Cross, Bangalore-560016</textarea>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Country of Residence <span
+                                                class="text-danger">*</span></label><input type="text" value="India"
+                                            readonly id="name" class="text-sm py-3 px-6 w-100 mb-2">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="btn px-5 mt-2 me-3"><i class='bx bx-edit'></i>Edit</button>
+                                    <button class="btn btn-outline px-5 mt-2"><i class='bx bx-save'></i>Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="libuysellTab == 'bank-info'">
+                        <div class="box p-3 height">
+                            <div class="box-inner-heading-text">
+                                <h3 class="h3 mb-1">Bank Info!</h3>
+                                <p class="bb-dashed mb-3 pb-3">Basic bank info, bank name etc.</p>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Account Holder Name<span
+                                                class="text-danger">*</span></label><input type="text" value="Jhon Deo"
+                                            readonly id="name" class="text-sm py-3 px-6 w-100 mb-2"></div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Account Number <span
+                                                class="text-danger">*</span></label><input type="text"
+                                            value="20092356898" readonly id="name" class="text-sm py-3 px-6 w-100 mb-2">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">IFSC Code<span class="text-danger">*</span></label><input
+                                            type="text" value="SBIN0001705" readonly id="name"
+                                            class="text-sm py-3 px-6 w-100 mb-2"></div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Swift Code<span class="text-danger">*</span></label><input
+                                            type="text" value="SBININBBXXX" readonly id="name"
+                                            class="text-sm py-3 px-6 w-100 mb-2"></div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Bank Name <span class="text-danger">*</span></label><input
+                                            type="text" value="State Bank of India" readonly id="name"
+                                            class="text-sm py-3 px-6 w-100 mb-2"></div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                            class="mb-3 mt-3">Bank Address<span
+                                                class="text-danger">*</span></label><textarea rows="1"
+                                            class="text-sm py-3 px-6 w-100 mb-2"
+                                            style="resize: none;">Akshya Nagar 1st Block 1st Cross, Bangalore-560016</textarea>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row mt-3">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-3">
+                                        <div class="file-uploader p-2">
+                                            <div class="content" (click)="openLg(zoomimage)">
+                                                <div class="content-overlay"></div>
+                                                <img class="content-image img-fluid"
+                                                    src="assets/images/cancelled-cheque.jpg" alt="">
+                                                <div class="content-details fadeIn-top fadeIn-left">
+                                                    <i class='bx bx-zoom-in icon'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="box-inner-heading-text">
+                                                <h3 class="h3 mb-0 mt-3 font-16 text-color">Cancelled Cheque</h3>
+                                                <p class="bb-dashed mb-3 pb-3">Your personal information remains
+                                                    confidential</p>
+                                            </div>
+                                            <button class="btn px-5 mt-2"><i
+                                                    class='bx bx-download'></i>Download</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="btn px-5 mt-2 me-3"><i class='bx bx-edit'></i>Edit</button>
+                                    <button class="btn btn-outline px-5 mt-2"><i class='bx bx-save'></i>Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="libuysellTab == 'e-sign'">
+                        <div class="box p-3 height">
+                            <div class="box-inner-heading-text">
+                                <h3 class="h3 mb-1">E-Sign!</h3>
+                                <p class="bb-dashed mb-3 pb-3">Please cross-check to confirm if the details are correct
+                                    or not.</p>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mt-3">
+                                    <div class="file-uploader p-2">
+                                        <div class="content" (click)="openLg(zoomimage)">
+                                            <div class="content-overlay"></div>
+                                            <img class="content-image img-fluid" src="assets/images/e-sign.png" alt="">
+                                            <div class="content-details fadeIn-top fadeIn-left">
+                                                <i class='bx bx-zoom-in icon'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="box-inner-heading-text">
+                                            <h3 class="h3 mb-0 mt-3 font-16 text-color">E-Sign</h3>
+                                            <p class="bb-dashed mb-3 pb-3">We take data seriously and your info is safe
+                                                with us</p>
+                                        </div>
+                                        <button class="btn px-5 mt-2"><i class='bx bx-download'></i>Download</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="libuysellTab == 'change-password'">
+                        <div class="box p-3 height">
+                            <div class="box-inner-heading-text">
+                                <h3 class="h3 mb-1">Change Password!</h3>
+                                <p class="bb-dashed mb-3 pb-3">Take a moment to confirm that your password is accurate.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                        class="mb-3 mt-3">Enter your Old Password <span
+                                            class="text-danger">*</span></label><input type="text" placeholder="******"
+                                        readonly id="name" class="text-sm py-3 px-6 w-100 mb-2"></div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"><label for="email"
+                                        class="mb-3 mt-3">Enter New Password <span
+                                            class="text-danger">*</span></label><input type="text"
+                                        placeholder="*********" readonly id="name" class="text-sm py-3 px-6 w-100 mb-2">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn px-5 mt-2 me-3"><i class='bx bxs-key'></i>Change Password</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #zoomimage let-modal>
+        <!-- <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+        <button type="button" class="btn-close-my" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div> -->
+        <div class="modal-body">
+            <button type="button" class="myclose1" aria-label="Close" (click)="modal.dismiss('Cross click')"><img
+                    src="assets/images/close-svg.svg" width="13px"></button>
+            <img class="content-image img-fluid" src="assets/images/back-passport.jpg" cla alt="">
+        </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">Close</button>
+    </div> -->
+    </ng-template>
