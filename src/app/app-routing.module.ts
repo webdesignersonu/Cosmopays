@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'onboarding-kyc', loadChildren: () => import('./modules/onboarding-kyc/onboarding-kyc.module').then(m => m.OnboardingKycModule) },
   { path: 'user-profile', loadChildren: () => import('./modules/user-profile/user-profile.module').then(m => m.UserProfileModule) },
   { path: 'banking-accounts', loadChildren: () => import('./modules/banking-accounts/banking-accounts.module').then(m => m.BankingAccountsModule) },
+  { path: 'open-account', loadChildren: () => import('./modules/open-account/open-account.module').then(m => m.OpenAccountModule) },
   
 ];
 
