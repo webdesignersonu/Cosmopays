@@ -265,13 +265,104 @@ legend {
     padding: 0.5rem 1rem;
     background: rgb(32, 183, 87);
     color: #FEFEFE;
-    width: 15%;
+    width: 25%;
     font-size: 0.875rem;
     line-height: 1.5rem;
     font-weight: 600;
 }
 .min-height{
-    height: 482px;
+    height: 437px;
     overflow: auto;
     padding-right: 1rem;
+}
+.select{
+    background-color: #f5faf5;
+    border: 1px solid rgb(235, 236, 239);
+    border-radius: 1.5rem;
+    font-size: 14px;
+    color: #222e48;
+}
+.text-sm-icon {
+    font-size:1.3rem;
+    line-height: 1.25rem;
+}
+.duration-300 {
+    transition-duration: .3s;
+}
+.z-20 {
+    z-index: 20;
+}
+.bg-white{
+    background-color: #fff;
+}
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.bg-green {
+    background-color: #20b7570d;
+}
+.rounded-md {
+    border-radius: .375rem;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.max-h-40 {
+    max-height: 10rem;
+    overflow: auto;
+}
+.top-full {
+    top: 100%;
+}
+.right-0 {
+    right: 0;
+}
+.opacity-0 {
+    opacity: 0;
+}
+.opacity-100 {
+    opacity: 1;
+}
+.opacity-0 {
+    opacity: 0;
+}
+.origin-top {
+    transform-origin: top;
+}
+.visible {
+    visibility: visible;
+}
+.invisible {
+    visibility: hidden;
+}
+.scale-0 {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 0;
+    --tw-scale-y: 0;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.scale-100 {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-180 {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-rotate: 180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }

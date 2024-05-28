@@ -1,0 +1,51 @@
+<div class="main-inner full-height">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-8">
+        <div>
+            <h2 class="mb-0">Add Beneficiary</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+            <div class="box p-3">
+                <div class="steps-main">
+                    <div class="tabs">
+                      <div aria-label="Basic example" role="group" class="btn-group">
+                        <button type="button" class="active  btn btn-secondary" data-node-index="0" [routerLink]="['/add-beneficiary/beneficiary']"
+                        routerLinkActive="router-link-active"><i class='bx bx-user-plus'></i>
+                          <div class="heading-text-active">
+                            <h4 class="mb-0 white-text">Beneficiary Personal Details</h4>
+                            <p class="white-text" >Easily open your account online</p>
+                          </div>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-node-index="1" [routerLink]="['/add-beneficiary/beneficiary-address']"
+                        routerLinkActive="router-link-active"><i class='bx bx-map'></i>
+                          <div class="heading-text-active">
+                            <h4 class="mb-0">Beneficiary Address</h4>
+                            <p>Easily open your account </p>
+                          </div>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-node-index="2" [routerLink]="['/add-beneficiary/beneficiary-bank-account']"
+                        routerLinkActive="router-link-active"><i class='bx bx-store' ></i>
+                            <div class="heading-text-active">
+                            <h4 class="mb-0">Beneficiary Bank Account</h4>
+                            <p>Easily open your account </p>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+            <div class="box p-3">
+                <img src="assets/images/add-beneficiary.png" class="img-fluid">
+                <h4 class="p-3 pb-0">How to <br><span>add a beneficiary for</span><br> funds transfer?
+                   
+                </h4>
+                <p class="ps-3">Easily add beneficiary in your account online with a <br>quick
+                    and simple process.</p>
+            </div>
+        </div>
+    </div>
+</div>

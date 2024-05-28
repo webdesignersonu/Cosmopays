@@ -1,0 +1,92 @@
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.px-6 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.py-6 {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+}
+.bor {
+    border: 1px dashed rgb(32, 183, 87);
+}
+
+.bg {
+    background-color: #20b7570d;
+}
+
+.main-inner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+}
+
+.width-45 {
+    min-width: 300px;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.gap-x-6 {
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+.gap-y-6 {
+    row-gap: 1.5rem;
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid {
+    display: grid;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: .75rem;
+    --tw-shadow: 0px 6px 40px 0px rgba(0, 0, 0, .02);
+    --tw-shadow-colored: 0px 6px 40px 0px var(--tw-shadow-color);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+table thead tr th {
+    background-color: #4371e90d;
+}
+table thead tr th:first-child {
+   border-top-left-radius: 0.75rem;
+  
+}
+table thead tr th:last-child{
+    border-top-right-radius: 0.75rem;
+}
+table tbody tr td{
+    vertical-align: middle;
+}
+tr:nth-child(even) {background-color: #4371e90d;}
+.small-text {
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #20b757;
+}
+.text-text {
+    font-size: 0.938rem;
+    line-height: 1rem;
+    font-weight: 600;
+}

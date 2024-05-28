@@ -12,7 +12,9 @@ const routes: Routes = [
   { path: 'user-profile', loadChildren: () => import('./modules/user-profile/user-profile.module').then(m => m.UserProfileModule) },
   { path: 'banking-accounts', loadChildren: () => import('./modules/banking-accounts/banking-accounts.module').then(m => m.BankingAccountsModule) },
   { path: 'open-account', loadChildren: () => import('./modules/open-account/open-account.module').then(m => m.OpenAccountModule) },
-  
+  { path: 'banking-statements', loadChildren: () => import('./modules/banking-statements/banking-statements.module').then(m => m.BankingStatementsModule) },
+  { path: 'manage-beneficiary', loadChildren: () => import('./modules/manage-beneficiary/manage-beneficiary.module').then(m => m.ManageBeneficiaryModule) },
+  { path: 'add-beneficiary', loadChildren: () => import('./modules/add-beneficiary/add-beneficiary.module').then(m => m.AddBeneficiaryModule) },
 ];
 
 @NgModule({
