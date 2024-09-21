@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'banking-statements', loadChildren: () => import('./modules/banking-statements/banking-statements.module').then(m => m.BankingStatementsModule) },
   { path: 'manage-beneficiary', loadChildren: () => import('./modules/manage-beneficiary/manage-beneficiary.module').then(m => m.ManageBeneficiaryModule) },
   { path: 'add-beneficiary', loadChildren: () => import('./modules/add-beneficiary/add-beneficiary.module').then(m => m.AddBeneficiaryModule) },
+  { path: 'banking-funds-transfer', loadChildren: () => import('./modules/banking-funds-transfer/banking-funds-transfer.module').then(m => m.BankingFundsTransferModule) },
 ];
 
 @NgModule({

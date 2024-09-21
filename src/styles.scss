@@ -311,6 +311,20 @@ body.vertical .sidebar .menu-btn:hover {
     color: rgb(255 255 255);
 }
 
+.sidebarhide{
+    --tw-rotate: 0;
+    --tw-translate-y:0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-translate-x: -100%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.sidebarhide {
+    visibility: hidden;
+}
+
 .min-h-screen {
     min-height: 100vh;
 }
